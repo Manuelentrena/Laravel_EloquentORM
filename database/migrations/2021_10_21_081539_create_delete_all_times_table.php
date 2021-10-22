@@ -13,18 +13,18 @@ class CreateDeleteAllTimesTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
+        /* Schema::table('users', function (Blueprint $table) {
             $table->dropTimestamps();
-        });
+        }); */
         Schema::table('cities', function (Blueprint $table) {
             $table->dropTimestamps();
         });
         Schema::table('companies', function (Blueprint $table) {
             $table->dropTimestamps();
         });
-        Schema::table('projects', function (Blueprint $table) {
+        /* Schema::table('projects', function (Blueprint $table) {
             $table->dropTimestamps();
-        });
+        }); */
     }
 
     /**
@@ -34,7 +34,7 @@ class CreateDeleteAllTimesTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
+        /* Schema::table('users', function (Blueprint $table) {
             $table->timestamps();
         });
         Schema::table('cities', function (Blueprint $table) {
@@ -45,6 +45,6 @@ class CreateDeleteAllTimesTable extends Migration
         });
         Schema::table('projects', function (Blueprint $table) {
             $table->timestamps();
-        });
+        }); */
     }
 }
